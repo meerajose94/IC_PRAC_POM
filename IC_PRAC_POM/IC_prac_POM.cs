@@ -35,9 +35,9 @@ namespace ICAutomation_prac1
         [Test]
         public void VerifyUserCanLogInOutToHorsePortal()
         {
-            login.User_Login(); // login
-            verify.User_Verify(); // username verification
-            logoff.User_Logoff(); // logoff
+            login.User_Login(driver); // login
+            verify.User_Verify(driver); // username verification
+            logoff.User_Logoff(driver); // logoff
             var currentBrowserUrl = driver.Url;
             Assert.AreEqual("http://horse.industryconnect.io/Account/Login?ReturnUrl=%2f", currentBrowserUrl);
         }

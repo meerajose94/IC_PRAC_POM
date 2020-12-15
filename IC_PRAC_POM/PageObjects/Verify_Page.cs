@@ -8,8 +8,8 @@ namespace IC_PRAC_POM.Verifiy_Page
 {
     class Verify_Page
     {
-        IWebDriver driver;
-        public void User_Verify()
+      //  IWebDriver driver;
+        public void User_Verify(IWebDriver driver)
         {
             //Verify user name
             var username = driver.FindElements(By.CssSelector("a[data-toggle=dropdown]"))[1].Text;

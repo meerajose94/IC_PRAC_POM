@@ -7,8 +7,8 @@ namespace IC_PRAC_POM.Logoff_Page
 {
     class Logoff_Page
     {
-        IWebDriver driver;
-        public void User_Logoff()
+      //  IWebDriver driver;
+        public void User_Logoff(IWebDriver driver)
         {
             //Verify user can logoff
             driver.FindElements(By.CssSelector("a[data-toggle=dropdown]"))[1].Click();

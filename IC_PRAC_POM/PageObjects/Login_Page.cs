@@ -8,8 +8,8 @@ namespace IC_PRAC_POM.Login_Page
 {
     class Login_Page
     {
-        IWebDriver driver;
-        public void User_Login()
+     //   IWebDriver driver;
+        public void User_Login(IWebDriver driver)
         {
             // Find locator for username and pwd and send value
             driver.FindElement(By.CssSelector("input[id= UserName]")).SendKeys("hari");
